@@ -1,5 +1,23 @@
 {
   "projects": {
-    "default": "mkv-landing-zone-dev"
-  }
+    "dev": "mkv-landing-zone-dev",
+    "prod": "mkv-xoogify-web-app-4b0e"
+  },
+  "targets": {
+    "mkv-landing-zone-dev": {
+      "hosting": {
+        "mkv-landing-zone-dev-docs": [
+          "mkv-landing-zone-dev-docs"
+        ]
+      }
+    },
+    "mkv-xoogify-web-app-4b0e": {
+      "hosting": {
+        "mkv-xoogify-web-app-4b0e-docs": [
+          "mkv-xoogify-web-app-4b0e-docs"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
