@@ -5,8 +5,8 @@ When you login for the first time into the Hyperautomation Tool an `Organization
 - See other `Organizations` you belong to
 - See Billing Plan
 - Delete/Rename [Environments](./Environment.md)
-- Add/Remove [Cloud Keys](./CloudKeys/README.md)
-- Add/Remove Team members
+- Add/Remove [Cloud Keys](#cloud-keys)
+- Add/Remove [Team members](#inviteremove-team-members)
 - See assigned GCP bucket for Terraform State Files and Logs
 - Change Organization Name
 
@@ -37,7 +37,7 @@ Only Admin can change/delete environments
 In the Team section you can Invite members to your organization or remove them. Invited members will be granted `Editor` role. Invited members can accept their invitations through the Profile page.
 ![Team Members](./img/Organization-Team.png)
 
-## Set Cloud Keys
+## Cloud Keys
 
 `Cloud keys` refer to the access keys or credentials used to authenticate to a cloud service provider. These could come in the form of an API key, a JSON file, or a series of tokens. They are essential for securely connecting, managing resources, and performing operations within cloud platforms like AWS, GCP, Azure, etc., in a way that adheres to the principle of least privilege.
 
@@ -75,10 +75,15 @@ Once the dialog is open put in the new value for the key.
 You can not see and modify the old value of the key. You can only enter the new key.
 :::
 
+### Deleting the Key
+
+To delete the cloud key press `Delete` button next to it. The key will be permanently removed from the system.
+![Delete Key](./img/Organization-KeyDelete.png)
+
 ## GCS Bucket
 
 GCS bucket is created along with your organiazation. Only your organization has access to your GCS bucket. GCS bucket is used for:
 
 1. Storing terraform state files. Each [Module](./Module.md) in the [Environment](./Environment.md) is stored in `gs://mkv-tf-{Organization ID}/{Environment ID}/{Module ID}/default.tfstate`
 1. Storing Terraform Plans. `gs:///mkv-tf-{Organization ID}/{Environment ID}/{Module ID}/plan/`
-1. Storing Terraform Logs. `gs:///mkv-tf-{Organization ID}/logs/`
+1. Storing Execution Logs. `gs:///mkv-tf-{Organization ID}/logs/`
