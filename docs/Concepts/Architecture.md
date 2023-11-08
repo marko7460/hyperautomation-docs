@@ -1,3 +1,3 @@
-# Architecture
+# Architectures
 
 TODO
