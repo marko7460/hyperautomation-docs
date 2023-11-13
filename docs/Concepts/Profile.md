@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # Profile
 
 The Profile page in the Xoogify web application provides personal details and cloud configuration options for the user. It is designed to allow users to see their personal information and cloud resources for deploying modules within their architectures.

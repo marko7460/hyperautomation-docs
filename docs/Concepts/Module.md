@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Modules
 
 Modules are the core of the Hyperautomation tool. Modules are part of the environment tree and they directly correspond to publicly availabe terraform modules. Modules are executable/deployable units of the environments. Modules don't create a new terraform code but rather they only set the input parameters defined in `variables.tf` of the module.

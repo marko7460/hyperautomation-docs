@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Environment
 
 Environmnet groups [terraform modules](../Concepts/Module.md) into logical dependency tree. Environments visually describe how your infrastructure looks like and how it is created using terraform modules. Most of the infrastructure management is done through the environments.

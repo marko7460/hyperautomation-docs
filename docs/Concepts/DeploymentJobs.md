@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Deployment Jobs
 
 The Deployment Jobs page in the Xoogify web application serves as a hub for users to monitor their deployment jobs across different environments and architectures. This page provides detailed insights into each job's status, facilitating efficient tracking and troubleshooting.

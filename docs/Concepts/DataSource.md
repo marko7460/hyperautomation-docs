@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Data Sources
 
 Data Sources looks like [Modules](./Module.md) but the difference is that these elements are not deployable. These elements are the containers for the already deployed elements in the architecture. Example of data source is a `GCP Project Data Source` or `AWS Account`. Paramaters set in the data sources are availabe to the children. Children of Data Sources can be [Modules](./Module.md) or other Data Sources.

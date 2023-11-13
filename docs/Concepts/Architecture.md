@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Architectures
 
 Architectures are templates that can be used to create [Environments from library](./Environment.md#creating-envrionment-from-library). Architectures look like Environments but the difference is that they don't have deploy action buttons like `plan`, `apply`, and `destroy`. The Architectures that you create are available to your organization only. Architecture are meant to be a utility for the users to quickly get started with their environments.
