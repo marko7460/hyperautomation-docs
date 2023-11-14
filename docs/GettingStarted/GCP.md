@@ -29,7 +29,7 @@ For this example we will assume that you already have a GCP project created.
 1. Scroll to the [Cloud Keys](../Concepts/Organization.md#cloud-keys) section.
 1. Press on `+Add` button.
 1. For `Cloud Key` choose `GOOGLE_CLOUD_KEYFILE_JSON`.
-1. Paste the value of the `credentials.json` in the above setps
+1. Paste the value of the `credentials.json` in the above steps
 1. For `Environment` choose `global`.
 1. Press `Save` button
 1. You should have something like this
@@ -70,7 +70,6 @@ Deployment process consists of running a `plan` action folowed by approval proce
 1. In the top right corner press `TERRAFORM-APPLY` button
 1. Wait for deployment to finish.
    ![Apply finished](./img/GCPExample-ApplySuccess.png)
-1. You can review the state file as in the image above
 1. Go to your GCP Cloud Console
 1. Go to Cloud Storage
 1. You will find the bucket that has been deployed
