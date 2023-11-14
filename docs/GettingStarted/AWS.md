@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 import {
 PlayArrow,
 MoreHoriz,
@@ -106,6 +110,6 @@ To review deployments log do:
 
 ## Cleanup
 
-1. In the left navigation menu click on `Oraganization`
-1. Delete the environment `EXAMPLE-S3-ENVIRONMENT`. See also [delete organization](../Concepts/Organization.md#renamedelete-envrionments)
+1. In the left navigation menu click on `Organization`
+1. Delete the environment `EXAMPLE-S3-ENVIRONMENT`. See also [delete environment](../Concepts/Organization.md#renamedelete-envrionments)
 1. Delete the AWS user and access key created in [prerequisite](#prerequiste)
