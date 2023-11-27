@@ -13,6 +13,7 @@ The Profile section displays the following user details:
 - Name: The full name of the user as registered on the platform.
 - Email: The email address associated with the user account.
 - **UID**: The unique identifier for the user within the Xoogify system.
+  ![Profile General](./img/Profile-General.png)
 
 :::info
 **_UID_** can be used to identify users in with OIDC systems in your cloud. For example, this value can be used to identify users when setting up [OIDC providers in AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html)
