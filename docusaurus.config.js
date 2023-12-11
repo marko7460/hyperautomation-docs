@@ -68,9 +68,10 @@ const config = {
         title: "Hyper Cloud Automation",
         logo: {
           alt: "Hyper Cloud Automation Logo",
-          src: Boolean(process.env.REACT_APP_IS_XOOGIFY)
-            ? "img/xoogify_Blue-Logo-B_croped.png"
-            : "img/docusaurus.png",
+          src:
+            process.env.REACT_APP_IS_XOOGIFY === "true"
+              ? "img/xoogify_Blue-Logo-B_croped.png"
+              : "img/docusaurus.png",
         },
         items: [
           // {
