@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Organization
 
-When you login for the first time into the Hyperautomation Tool an `Organization` will be generated for you. Through Organization you can:
+When you login for the first time into the Hyper Cloud Automation Tool an `Organization` will be generated for you. Through Organization you can:
 
 - See other `Organizations` you belong to
 - See Billing Plan

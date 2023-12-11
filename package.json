@@ -1,5 +1,5 @@
 {
-  "name": "hyperautomation-docs",
+  "name": "hypecloudautomation-docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -22,6 +22,7 @@
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.17",
     "clsx": "^1.2.1",
+    "dotenv": "^16.3.1",
     "prism-react-renderer": "^2.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

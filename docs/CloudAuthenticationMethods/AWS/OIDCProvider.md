@@ -1,3 +1,6 @@
+import AppUrl from '@site/src/components/AppUrl';
+import {ProjectID} from '@site/src/components/AppUrl';
+
 # OIDC Provider
 
 Setting up the OIDC provider will allow Hyper Cloud Automation to authenticate to your AWS Account without use of AWS Access Keys. OIDC Provider will allow Hyper Cloud Automation to authenticate using JWT Tokens.
@@ -59,7 +62,7 @@ Setting up the OIDC provider will allow Hyper Cloud Automation to authenticate t
    :::
 1. Press **Next** button
 1. For role name enter **xoogify-admin**.
-1. For description enter "Xoogify Hyper Cloud Automation Federated Role"
+1. For description enter Hyper Cloud Automation Federated Role"
    ![Role Name](./img/OIDC_role_name.png)
 1. Press **Create** button
 1. **Note down the ARN of the created role. You will need it in the next section**
@@ -69,7 +72,7 @@ Setting up the OIDC provider will allow Hyper Cloud Automation to authenticate t
 
 This is an example of how you can use the above created role
 
-1. Go to https://app.xoogify.com
+1. Go to [<AppUrl />](<AppUrl />)
 1. Click on the [Environments](../../Concepts/Environment.md) in the left navigation menu
 1. Click on **Add Enironment** button and give it a name
 1. Add `AWS Account` to the environment tree

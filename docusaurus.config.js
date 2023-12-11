@@ -5,12 +5,13 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from "prism-react-renderer";
+import "dotenv/config";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Cloud Hyperautomation",
-  tagline: "Hybeprautomation for the Cloud",
-  favicon: "img/xoogify_Blue-Logo-D.ico",
+  title: "Hyper Cloud Automation",
+  tagline: "Hyper Cloud Automation",
+  //favicon: "img/xoogify_Blue-Logo-D.ico",
 
   // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
@@ -32,6 +33,11 @@ const config = {
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
+  },
+  customFields: {
+    // Put your custom environment here
+    appUrl: `${process.env.REACT_APP_URL}`,
+    projectID: process.env.REACT_APP_PROJECT_ID,
   },
 
   presets: [
@@ -59,10 +65,12 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "Cloud Hyperautomation",
+        title: "Hyper Cloud Automation",
         logo: {
-          alt: "Cloud Hyperautomation Logo",
-          src: "img/xoogify_Blue-Logo-B_croped.png",
+          alt: "Hyper Cloud Automation Logo",
+          src: Boolean(process.env.REACT_APP_IS_XOOGIFY)
+            ? "img/xoogify_Blue-Logo-B_croped.png"
+            : "img/docusaurus.png",
         },
         items: [
           // {
@@ -123,7 +131,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2023 Xoogify, Inc.`,
+        copyright: `Copyright © 2023 markodevops.com`,
       },
       prism: {
         theme: prismThemes.github,

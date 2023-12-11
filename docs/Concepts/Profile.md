@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Profile
 
-The Profile page in the Xoogify web application provides personal details and cloud configuration options for the user. It is designed to allow users to see their personal information and cloud resources for deploying modules within their architectures.
+The Profile page in the Hyper Cloud Automation web application provides personal details and cloud configuration options for the user. It is designed to allow users to see their personal information and cloud resources for deploying modules within their architectures.
 
 ## Profile Information
 
@@ -12,7 +12,7 @@ The Profile section displays the following user details:
 
 - Name: The full name of the user as registered on the platform.
 - Email: The email address associated with the user account.
-- **UID**: The unique identifier for the user within the Xoogify system.
+- **UID**: The unique identifier for the user within the Hyper Cloud Automation system.
   ![Profile General](./img/Profile-General.png)
 
 :::info

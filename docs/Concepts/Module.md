@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Modules
 
-Modules are the core of the Hyperautomation tool. Modules are part of the environment tree and they directly correspond to publicly availabe terraform modules. Modules are executable/deployable units of the environments. Modules don't create a new terraform code but rather they only set the input parameters defined in `variables.tf` of the module.
+Modules are the core of the Hyper Cloud Automation tool. Modules are part of the environment tree and they directly correspond to publicly availabe terraform modules. Modules are executable/deployable units of the environments. Modules don't create a new terraform code but rather they only set the input parameters defined in `variables.tf` of the module.
 
 You will notice that modules are part of the environment tree. That means that some outputs of the parent modules will be automatically available to the childre of the module. The best example would be a `GCP Project` module. One of the outputs of the `GCP Project` is `project_id`. The value of this output is automatically available to children automatically. This means that in some module settings in the tree you will not see all the input parameters available in the original module's `variables.tf`. The tool will automtically apply appropriate parent outputs as input values of the children.
 ![parent children relationship](./img/Module-ParentChildrenRelationship.png)
@@ -76,7 +76,7 @@ This button will open a dialog displaying the plan to be destroyed. By clicking 
 
 ### Add Button
 
-Add button will add a child to the tree. List of children is based on the parent type. Hyperautomation tool keeps the dependency tree curated so that the modules can be added to the tree in a meaningul manner without causing cycling dependencies.
+Add button will add a child to the tree. List of children is based on the parent type. Hyper Cloud Automation tool keeps the dependency tree curated so that the modules can be added to the tree in a meaningul manner without causing cycling dependencies.
 
 ### Remove Button
 

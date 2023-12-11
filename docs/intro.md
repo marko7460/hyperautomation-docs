@@ -3,7 +3,7 @@ sidebar_position: 1
 slug: /
 ---
 
-# Hyperautomation Docs
+# Hyper Cloud Automation Docs
 
 - For new cloud deployment our product is intended to simplify the deployment of foundation cloud architecture.
 - For existing cloud service providers our product reduces the tedium of having to configure and deploy multiple Terreform packages and manually reconfiguring them.
