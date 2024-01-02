@@ -14,12 +14,12 @@ Setting up the OIDC provider will allow Hyper Cloud Automation to authenticate t
    ![Add Provider Button](./img/OIDC_add_provider_button.png)
 1. Set the following:
    1. Provider type: OpenID Connect
-   1. Provider URL: https://securetoken.google.com/mkv-xoogify-web-app-4b0e
-   1. Audience: **mkv-xoogify-web-app-4b0e**
+   1. Provider URL: https://securetoken.google.com/mighty-cloud-app-prd-bf2a
+   1. Audience: **mighty-cloud-app-prd-bf2a**
    1. Click on **Add Provider**
       ![Provider Settings](./img/OIDC_provider_settings.png)
-1. You should see **securetoken.google.com/mkv-xoogify-web-app-4b0e** in the list of providers.
-1. Click on **securetoken.google.com/mkv-xoogify-web-app-4b0e** and note down the ARN.
+1. You should see **securetoken.google.com/mighty-cloud-app-prd-bf2a** in the list of providers.
+1. Click on **securetoken.google.com/mighty-cloud-app-prd-bf2a** and note down the ARN.
    ![Provider ARN](./img/OIDC_provider_arn.png)
 1. In the left navigation menu click on **Roles**
 1. In the right corner click on **Create Role** button
@@ -31,13 +31,13 @@ Setting up the OIDC provider will allow Hyper Cloud Automation to authenticate t
        {
          "Effect": "Allow",
          "Principal": {
-           "Federated": "arn:aws:iam::<YOUR AWS ACCOUNT ID>:oidc-provider/securetoken.google.com/mkv-xoogify-web-app-4b0e"
+           "Federated": "arn:aws:iam::<YOUR AWS ACCOUNT ID>:oidc-provider/securetoken.google.com/mighty-cloud-app-prd-bf2a"
          },
          "Action": "sts:AssumeRoleWithWebIdentity",
          "Condition": {
            "StringEquals": {
-             "securetoken.google.com/mkv-xoogify-web-app-4b0e:aud": "mkv-xoogify-web-app-4b0e",
-             "securetoken.google.com/mkv-xoogify-web-app-4b0e:sub": "<Hyper Cloud Automation UID>"
+             "securetoken.google.com/mighty-cloud-app-prd-bf2a:aud": "mighty-cloud-app-prd-bf2a",
+             "securetoken.google.com/mighty-cloud-app-prd-bf2a:sub": "<Hyper Cloud Automation UID>"
            }
          }
        }
@@ -48,7 +48,7 @@ Setting up the OIDC provider will allow Hyper Cloud Automation to authenticate t
    1. `<YOUR AWS ACCOUNT ID>` is the ID of the AWS Account where your are creatint this role (same account where OIDC Provider is created)
    1. `<Hyper Cloud Automation UID>` is your user UID in Hyper Cloud Automation. You can find this value in [Profile](../../Concepts/Profile.md) page.
       :::info
-      You can specify an array of UIDs as well. For example `"securetoken.google.com/mkv-xoogify-web-app-4b0e:sub": ["uid1", "uid2", "uid3"]`
+      You can specify an array of UIDs as well. For example `"securetoken.google.com/mighty-cloud-app-prd-bf2a:sub": ["uid1", "uid2", "uid3"]`
       :::
       :::warning
       It is very important to set UID value in the above policy. Do not leave it blank
@@ -61,7 +61,7 @@ Setting up the OIDC provider will allow Hyper Cloud Automation to authenticate t
    Using `Administrator Access` is a broad policy best suted to deploy any kind of resource in your AWS account. If this is too broad you can set the permissions to other less broad roles.
    :::
 1. Press **Next** button
-1. For role name enter **xoogify-admin**.
+1. For role name enter **mighty-admin**.
 1. For description enter Hyper Cloud Automation Federated Role"
    ![Role Name](./img/OIDC_role_name.png)
 1. Press **Create** button

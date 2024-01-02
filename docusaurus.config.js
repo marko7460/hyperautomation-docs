@@ -11,7 +11,7 @@ import "dotenv/config";
 const config = {
   title: "Hyper Cloud Automation",
   tagline: "Hyper Cloud Automation",
-  //favicon: "img/xoogify_Blue-Logo-D.ico",
+  favicon: "img/mightycloud-favicon-64x64.png",
 
   // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
@@ -68,10 +68,7 @@ const config = {
         title: "Hyper Cloud Automation",
         logo: {
           alt: "Hyper Cloud Automation Logo",
-          src:
-            process.env.REACT_APP_IS_XOOGIFY === "true"
-              ? "img/xoogify_Blue-Logo-B_croped.png"
-              : "img/docusaurus.png",
+          src: "img/mightcloud-logo-dashboard-163x40.jpg",
         },
         items: [
           // {

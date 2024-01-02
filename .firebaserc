@@ -1,7 +1,7 @@
 {
   "projects": {
     "dev": "mkv-landing-zone-dev",
-    "prod": "mkv-xoogify-web-app-4b0e"
+    "prod": "mighty-cloud-app-prd-bf2a"
   },
   "targets": {
     "mkv-landing-zone-dev": {
@@ -11,10 +11,10 @@
         ]
       }
     },
-    "mkv-xoogify-web-app-4b0e": {
+    "mighty-cloud-app-prd-bf2a": {
       "hosting": {
-        "mkv-xoogify-web-app-4b0e-docs": [
-          "mkv-xoogify-web-app-4b0e-docs"
+        "mighty-cloud-app-prd-bf2a-docs": [
+          "mighty-cloud-app-prd-bf2a-docs"
         ]
       }
     }
