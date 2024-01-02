@@ -23,7 +23,7 @@
       ]
     },
     {
-      "target": "mkv-xoogify-web-app-4b0e-docs",
+      "target": "mighty-cloud-app-prd-bf2a-docs",
       "public": "build",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "headers": [

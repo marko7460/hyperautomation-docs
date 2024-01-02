@@ -22,7 +22,7 @@ In your aws account create a user with the S3FullAccess policy and upload the ac
 
 1. Login to your AWS account
 2. Go to IAM
-3. Create a user called **xoogify-automation**
+3. Create a user called **mighty-automation**
    ![Create User](./img/AWSExample-CreateUser.png)
 4. Assign the user AmazonS3FullAccess Policy
    ![attach policy](./img/AWSExample-AttachS3policy.png)
@@ -67,7 +67,7 @@ In this example we will create a simple environment which consist of a module th
 1. Click on <MoreHoriz width="30"/> button and set the region to `us-west-2` and press `Save`
 1. On `AWS Region` node press <Add width="30"/> and select `AWS S3 Bucket` [Module](../Concepts/Module.md)
 1. Click on <MoreHoriz width="30"/> button to enter the settings for the bucket
-   1. You only need to set the `Bucket Name`. (Example: `my-xoogify-hyper-cloud-automation-bucket-57`)
+   1. You only need to set the `Bucket Name`. (Example: `my-mighty-hyper-cloud-automation-bucket-57`)
    1. Scroll all the way down and press `Save`
 
 Your first simple environment should look something like this:

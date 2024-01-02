@@ -21,9 +21,9 @@ In this quick start we will show you how you can use `Hyper Cloud Automation` to
 For this example we will assume that you already have a GCP project created.
 
 1. Go to your cloud shell https://shell.cloud.google.com/
-1. Create service account: `gcloud --project <YOUR_PROJECT_ID> iam service-accounts create xoogify-example`
-1. Grant `Storage Admin` role to the account: `gcloud projects add-iam-policy-binding <YOUR_PROJECT_ID> --member serviceAccount:xoogify-example@<YOUR_PROJECT_ID>.iam.gserviceaccount.com --role roles/storage.admin`
-1. Create a service account key: `gcloud --project <YOUR_PROJECT_ID> iam service-accounts keys create credentials.json --iam-account xoogify-example@<YOUR_PROJECT_ID>.iam.gserviceaccount.com`
+1. Create service account: `gcloud --project <YOUR_PROJECT_ID> iam service-accounts create mighty-example`
+1. Grant `Storage Admin` role to the account: `gcloud projects add-iam-policy-binding <YOUR_PROJECT_ID> --member serviceAccount:mighty-example@<YOUR_PROJECT_ID>.iam.gserviceaccount.com --role roles/storage.admin`
+1. Create a service account key: `gcloud --project <YOUR_PROJECT_ID> iam service-accounts keys create credentials.json --iam-account mighty-example@<YOUR_PROJECT_ID>.iam.gserviceaccount.com`
 1. Note down the value of the key by doing `cat credentials.json`
 1. In the Hyper Cloud Automation click on [Organization](../Concepts/Organization.md) in the left hand navigation menu.
 1. Scroll to the [Cloud Keys](../Concepts/Organization.md#cloud-keys) section.
